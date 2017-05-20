@@ -31,11 +31,6 @@ void UActorPool::Return(AActor* ActorToReturn)
 
 void UActorPool::Add(AActor* ActorToAdd)
 {
-	if (ActorToAdd == nullptr)
-	{
-		UE_LOG(LogTemp, Error, TEXT("Cannot add null actor."));
-		return;
-	}
 	Pool.Push(ActorToAdd);
 }
 
